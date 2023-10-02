@@ -1,0 +1,129 @@
+* {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+form.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 50vh;
+  transform: scale(1.5);
+}
+
+input#search.search {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+  border: none;
+  border-radius: 5px;
+  color: #333;
+  height: 2em;
+}
+
+button.btn {
+  margin-left: 10px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+  background-color: rgb(67, 129, 67);
+  border: none;
+  border-radius: 5px;
+  color: rgb(255, 255, 255);
+  height: 2em;
+  transition: all 0.3s ease-in-out;
+}
+
+button.btn:hover {
+  background-color: rgb(86, 152, 86);
+  opacity: 0.8;
+}
+
+.search-results {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.search-result {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 30%;
+  height: 100%;
+  margin-bottom: 60px;
+}
+
+.search-result img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+}
+
+.search-result img:hover {
+  opacity: 0.8;
+}
+
+/*center this button*/
+#show-more-button {
+  background-color: rgb(67, 129, 67);
+  font-size: 18px;
+  border: none;
+  color: #fff;
+  padding: 10px 20px;
+  text-align: center;
+  display: block;
+  margin: 30px auto;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  display: none;
+}
+
+#show-more-button:hover {
+  background-color: rgb(86, 152, 86);
+  opacity: 0.8;
+}
+
+a {
+  display: block;
+  text-transform: capitalize;
+  text-decoration: none;
+  color: #333;
+  font-size: larger;
+}
+
+@media screen and (max-width: 768px) {
+  .search-result {
+    width: 45%;
+  }
+
+  .search-result img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .search-results {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 1.5em;
+    display: block;
+    margin: 10px auto;
+  }
+
+  div.search {
+    padding: 1px 2px;
+    transform: scale(0.9);
+  }
+}
